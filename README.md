@@ -1,13 +1,13 @@
 # 🐇 Sales Insight Automator — Rabbitt AI
 
-> Upload sales data → AI generates an executive brief → Delivered to your inbox
+> **Live Application**: [https://frontend-ten-lovat-84.vercel.app](https://frontend-ten-lovat-84.vercel.app)
+> **GitHub Repository**: [https://github.com/vidhiverma23/Sales-Insight-Automator](https://github.com/vidhiverma23/Sales-Insight-Automator)
 
 A secure, containerized full-stack application that transforms raw sales data (CSV/XLSX) into professional AI-generated summaries and delivers them via email.
 
 ![Architecture](https://img.shields.io/badge/Architecture-FastAPI%20%2B%20React-blueviolet?style=for-the-badge)
 ![AI](https://img.shields.io/badge/AI-Google%20Gemini-blue?style=for-the-badge)
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker)
-
 ---
 
 ## 🏗️ Architecture Overview
