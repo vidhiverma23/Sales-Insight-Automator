@@ -1,7 +1,9 @@
 # 🐇 Sales Insight Automator — Rabbitt AI
 
-> **Live Application**: [https://frontend-ten-lovat-84.vercel.app](https://frontend-ten-lovat-84.vercel.app)
-> **GitHub Repository**: [https://github.com/vidhiverma23/Sales-Insight-Automator](https://github.com/vidhiverma23/Sales-Insight-Automator)
+> **Frontend App**: [https://frontend-ten-lovat-84.vercel.app](https://frontend-ten-lovat-84.vercel.app)
+> **Backend API**: [https://backend-xi-six-58.vercel.app](https://backend-xi-six-58.vercel.app)
+> **Swagger API Docs**: [https://backend-xi-six-58.vercel.app/docs](https://backend-xi-six-58.vercel.app/docs)
+> **GitHub Source**: [https://github.com/vidhiverma23/Sales-Insight-Automator](https://github.com/vidhiverma23/Sales-Insight-Automator)
 
 A secure, containerized full-stack application that transforms raw sales data (CSV/XLSX) into professional AI-generated summaries and delivers them via email.
 
