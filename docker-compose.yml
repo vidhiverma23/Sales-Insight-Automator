@@ -1,0 +1,45 @@
+# ===========================================
+# Sales Insight Automator — Docker Compose
+# ===========================================
+# Usage:  docker-compose up --build
+# Docs:   http://localhost:8000/docs
+# App:    http://localhost:3000
+# ===========================================
+
+version: "3.8"
+
+services:
+  # --- Backend API ---
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: sia-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      - CORS_ORIGINS=http://localhost:3000
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    restart: unless-stopped
+
+  # --- Frontend SPA ---
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: http://localhost:8000
+    container_name: sia-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
